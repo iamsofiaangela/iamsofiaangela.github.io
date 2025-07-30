@@ -1,2 +1,0 @@
-# iamsofiaangela.github.io
-Profolio
