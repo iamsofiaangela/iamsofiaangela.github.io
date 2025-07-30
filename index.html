@@ -2,26 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Responsive Top Navigation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
+  <!-- Navigation Bar -->
   <nav class="navbar">
-    <a href="#" class="logo">MySite</a>
-    <div class="nav-links" id="navLinks">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </div>
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
+    <div class="logo">My <span class="nft">Portfolio</span></div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <input type="text" placeholder="Search" class="search" />
+      <button class="register-btn">Hire Me</button>
     </div>
   </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm a Creative Developer & Designer</h1>
+      <p>I build engaging digital experiences, portfolios, and user interfaces.</p>
+      <div class="hero-buttons">
+        <button class="discover-btn">View Work</button>
+        <button class="create-btn">Contact Me</button>
+        <a href="#" class="video-link">Watch My Intro</a>
+      </div>
+      <div class="stats">
+        <div><strong>10+</strong><br>Projects Completed</div>
+        <div><strong>5+</strong><br>Years Experience</div>
+        <div><strong>100%</strong><br>Client Satisfaction</div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/profile-hero.png" alt="Profile Image" />
+      <div class="nft-card">
+        <p>Currently Available</p>
+        <p>Next Project Slot: <strong>2 weeks</strong></p>
+        <button>Book Now</button>
+        <button class="purchase">Download CV</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Add remaining sections: Skills, Projects, Testimonials, Footer -->
 
   <script src="script.js"></script>
 </body>
