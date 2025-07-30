@@ -1,79 +1,241 @@
+/* Reset & Base */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f1b;
+  color: #ffffff;
+  line-height: 1.6;
 }
 
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding: 10px 20px;
+  background: #151526;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.navbar .logo {
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo .nft {
+  color: #9f7aea;
 }
 
 .nav-links {
   display: flex;
-  gap: 15px;
+  list-style: none;
+  gap: 30px;
 }
 
 .nav-links a {
-  color: white;
   text-decoration: none;
-  padding: 8px 12px;
-  transition: background 0.3s;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  background-color: #575757;
-  border-radius: 4px;
+  color: #9f7aea;
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.register-btn {
+  background: #9f7aea;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-btn:hover {
+  background: #7b5fd4;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 50px;
+  background: radial-gradient(circle at top left, #1e1e33, #0f0f1b);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.discover-btn,
+.create-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.discover-btn {
+  background: #9f7aea;
+  color: white;
+}
+
+.create-btn {
+  background: transparent;
+  border: 2px solid #9f7aea;
+  color: #9f7aea;
+}
+
+.discover-btn:hover {
+  background: #7b5fd4;
+}
+
+.create-btn:hover {
+  background: #9f7aea;
+  color: #fff;
+}
+
+.video-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #9f7aea;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  max-width: 350px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(159, 122, 234, 0.4);
+}
+
+.nft-card {
+  background: #1e1e33;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nft-card p {
+  margin-bottom: 10px;
+}
+
+.nft-card button {
+  margin: 5px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
   cursor: pointer;
 }
 
-.hamburger div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 4px 0;
+.nft-card .purchase {
+  background: transparent;
+  border: 1px solid #9f7aea;
+  color: #9f7aea;
 }
 
-@media screen and (max-width: 768px) {
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #333;
+.nft-card .purchase:hover {
+  background: #9f7aea;
+  color: #fff;
+}
+
+.nft-card button:not(.purchase) {
+  background: #9f7aea;
+  color: #fff;
+}
+
+.nft-card button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
     flex-direction: column;
-    padding: 10px 0;
+    align-items: flex-start;
+    padding: 20px;
   }
 
-  .nav-links a {
-    padding: 12px 20px;
-    width: 100%;
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
   }
 
-  .nav-links.active {
-    display: flex;
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
   }
 
-  .hamburger {
-    display: flex;
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  .nft-card {
+    position: static;
+    margin-top: 20px;
   }
 }
