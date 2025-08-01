@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-sm-6 col-lg-3 my-4">
                     <div class="mb-4">
-                        <img src="static/img/logo-light.svg" title="" alt="">
+                        
                     </div>
                     <div class="text-white-65 mb-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
                     <div class="nav footer-socila-icon">
