@@ -75,6 +75,8 @@ nav {
   }
 }
 
+/* Footer SECTION */
+
 .footer .footer-socila-icon a {
      width: 30px;
      height: 30px;
@@ -87,8 +89,6 @@ nav {
      margin-right: 8px;
      font-size: 15px;
  }
-
-/* Footer SECTION */
 
  .footer .footer-socila-icon a:hover {
      background: #1baaa0;
