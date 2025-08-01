@@ -12,16 +12,53 @@
 <main class="flex-shrink-0">
   <!-- Editable Header Navigation -->
   <header class="site-header">
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="logo">MyPortfolio</div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <div class="container px-5">
+        <a class="navbar-brand fw-bold" href="#page-top">ANGELA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                <li class="nav-item"><a class="nav-link me-lg-3" href="index.php">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="layoutsDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="layoutsDropdown">
+                        <!-- Little Studio's Story -->
+                        <!-- <li><a class="dropdown-item" href="about_little.php">About My Work</a></li> -->
+                        <!-- My Resume Information -->
+                        <li><a class="dropdown-item" href="resume.php">My Resume</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="layoutsDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        My Work
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="layoutsDropdown">
+                        <!-- My Projects -->
+                        <li class="nav-item"><a class="nav-link" href="projects.php"> My Projects</a></li>
+                        <!-- Case Study -->
+                        <li class="nav-item"><a class="nav-link" href="case_study.php">Case Study</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#contact">
+                <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
+                    <span class="d-flex align-items-center">
+                        <i class="bi-chat-text-fill me-2"></i>
+                        <span class="small">Contact Now</span>
+                    </span>
+                </button>
+            </a>
+        </div>
+    </div>
+</nav>
   </header>
 
   <!-- Hero Section -->
