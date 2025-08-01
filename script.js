@@ -1,2 +1,2 @@
-// Example for future features like dark mode or animations
-console.log("Welcome to my portfolio!");
+// This for Timeline 2025 in footer
+  document.getElementById("year").textContent = new Date().getFullYear();
