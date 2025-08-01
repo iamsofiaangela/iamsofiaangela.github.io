@@ -3,262 +3,201 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
   <title>My Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" crossorigin="anonymous" />
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/service.css" />
   <link rel="stylesheet" href="css/footer.css" />
 </head>
+
 <body class="d-flex flex-column h-100 bg-light">
-<main class="flex-shrink-0">
-  <!-- Editable Header Navigation -->
+  <main class="flex-shrink-0">
+
+    <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-    <div class="container px-5">
+      <div class="container px-5">
         <a class="navbar-brand fw-bold" href="#page-top">ANGELA</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="bi-list"></i>
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu <i class="bi bi-list ms-1"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                <li class="nav-item"><a class="nav-link me-lg-3" href="index.php">Home</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="layoutsDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        About
-                    </a>
-                </li>
-            </ul>
-            <a href="#contact">
-                <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
-                    <span class="d-flex align-items-center">
-                        <i class="bi-chat-text-fill me-2"></i>
-                        <span class="small">Contact Now</span>
-                    </span>
-                </button>
-            </a>
+          <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+            <li class="nav-item"><a class="nav-link me-lg-3" href="index.php">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="layoutsDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">About</a>
+              <!-- Optional dropdown items -->
+              <ul class="dropdown-menu" aria-labelledby="layoutsDropdown">
+                <li><a class="dropdown-item" href="#">Bio</a></li>
+                <li><a class="dropdown-item" href="#">Vision</a></li>
+              </ul>
+            </li>
+          </ul>
+          <a href="#contact">
+            <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
+              <span class="d-flex align-items-center">
+                <i class="bi bi-chat-text-fill me-2"></i>
+                <span class="small">Contact Now</span>
+              </span>
+            </button>
+          </a>
         </div>
-    </div>
-</nav>
-  <br>
-<!--- BODY --->
-          <header class="masthead">
-              <section id="home">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                      <br><br><br>
-                        <!-- Mashead text and app badges-->
-                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 class="display-1 lh-1 mb-3">I am Fia,
-                            </h1>
-                            <p class="lead fw-normal text-muted mb-5">Creative Designer & Digital Crafter</p>
-                            
-                            <div class="d-flex flex-column flex-lg-row align-items-center">
-                                <a class="btn brown me-lg-3 mb-4 mb-lg-0" href="#services">See My Work</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <!-- Masthead device mockup feature-->
-                        <div class="masthead-device-mockup">
-                            <img src="./assets/image/profile.JPG" class="img-thumbnail"
-                                style="max-width: 70%; height: 50%" alt="profile">
-                        </div>
-                    </div>
-                </div>
-            </div>
-              </section>
-            <br><br><br>
-  <!-- SERVICES -->
-  <section id="services" class="section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-sm-8 col-lg-6">
-            <!-- Section Heading for service -->
-            <div class="section-heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-              <h6>Plans Your Best Service</h6>
-              <h3>Let's find a way together</h3>
-              <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
-              <div class="line"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <!--  Plan A-->
-          <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-            <div class="card" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-              <div class="title">
-                <h3>Social Media Templates</h3>
-                <p>Editable Canva templates for creatives and small businesses</p>
-                <div class="line"></div>
-              </div>
-              <div class="price">
-                <!--- <h4>$0</h4> --->
-              </div>
-              <div class="description">
-                <p><i class="lni lni-checkmark-circle"></i>Duration: 7days</p>
-                <p><i class="lni lni-checkmark-circle"></i>10 Features</p>
-                <p><i class="lni lni-close"></i>No Hidden Fees</p>
-                <p><i class="lni lni-close"></i>100+ Video Tuts</p>
-                <p><i class="lni lni-close"></i>No Tools</p>
-              </div>
-              <div class="button"><a class="btn btn-success btn-2" href="#">Get Started</a></div>
-            </div>
-          </div>
-          <!-- Plan B -->
-         
-          <!-- Plan C -->
+      </div>
+    </nav>
 
+    <!-- HERO HEADER -->
+    <header class="masthead pt-5 mt-5">
+      <section id="home">
+        <div class="container px-5">
+          <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="text-center text-lg-start">
+                <h1 class="display-1 lh-1 mb-3">I am Fia</h1>
+                <p class="lead fw-normal text-muted mb-4">Creative Designer & Digital Crafter</p>
+                <a class="btn btn-dark me-lg-3 mb-4 mb-lg-0" href="#services">See My Work</a>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <img src="./assets/image/profile.JPG" class="img-thumbnail" style="max-width: 70%; height: auto;" alt="profile">
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- SERVICES -->
+    <section id="services" class="section py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <h6 class="text-uppercase text-muted">Plans Your Best Service</h6>
+            <h3>Let's find a way together</h3>
+            <p>Custom digital services crafted with care and creativity.</p>
+            <div class="line mx-auto my-3" style="width: 50px; height: 3px; background: #000;"></div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <!-- Plan A -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h3 class="card-title">Social Media Templates</h3>
+                <p class="card-text">Editable Canva templates for creatives and small businesses.</p>
+                <ul class="list-unstyled mt-3">
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Duration: 7 days</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>10 Features</li>
+                  <li><i class="fas fa-times-circle text-danger me-2"></i>No Hidden Fees</li>
+                  <li><i class="fas fa-times-circle text-danger me-2"></i>100+ Video Tutorials</li>
+                  <li><i class="fas fa-times-circle text-danger me-2"></i>No Tools Included</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent text-center">
+                <a href="#" class="btn btn-success">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <!-- You can add more cards here -->
         </div>
       </div>
     </section>
 
-        </header>
-  
-        <br><br>
-        <!-- Footer-->
-      <!-- FOOTER FOR PORTFOLIO -->
-<footer class="bg-dark-gradient footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="footer-border-bottom pb-6 mb-5">
-                <div class="row">
-                    <div class="col-lg-4 col-xl-3">
-                        <h4 class="text-white">
-                            Sign up to Get Latest Updates
-                        </h4>
-                    </div>
-                    <div class="col-lg-4 col-xl-6">
-                        <form class="d-flex flex-row mb-2 p-1 bg-white input-group">
-                            <input type="email" class="form-control rounded-0 border-0" placeholder="you@yoursite.com">
-                            <button class="btn btn-secondary rounded-0 flex-shrink-0" type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                    <div class="col-lg-4 col-xl-3">
-                        <div class="text-lg-end text-white">
-                            <span class="h6">Call Us On</span><br>
-                            <span class="h3">1-800-222-000</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-lg-3 my-4">
-                    <div class="mb-4">
-                        <img src="static/img/logo-light.svg" title="" alt="">
-                    </div>
-                    <div class="text-white-65 mb-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                    <div class="nav footer-socila-icon">
-                        <a href="#">
-<i class="fab fa-facebook-f"></i>
-</a>
-                        <a href="#">
-<i class="fab fa-twitter"></i>
-</a>
-                        <a href="#">
-<i class="fab fa-instagram"></i>
-</a>
-                        <a href="#">
-<i class="fab fa-linkedin-in"></i>
-</a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-2 my-4">
-                    <h5 class="text-white h6 mb-4">Customer</h5>
-                    <ul class="list-unstyled white-link footer-links">
-                        <li>
-                            <a href="#">Get Corpo</a>
-                        </li>
-                        <li>
-                            <a href="#">Documentation</a>
-                        </li>
-                        <li>
-                            <a href="#">Help center</a>
-                        </li>
-                        <li>
-                            <a href="#">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-lg-2 my-4">
-                    <h5 class="text-white h6 mb-4">Product</h5>
-                    <ul class="list-unstyled white-link footer-links">
-                        <li>
-                            <a href="#">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Join our team</a>
-                        </li>
-                        <li>
-                            <a href="#">Elements</a>
-                        </li>
-                        <li>
-                            <a href="#">Products</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-lg-2 my-4">
-                    <h5 class="text-white h6 mb-4">Company</h5>
-                    <ul class="list-unstyled white-link footer-links">
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Careers</a>
-                        </li>
-                        <li>
-                            <a href="#">Legal &amp; Security</a>
-                        </li>
-                        <li>
-                            <a href="#">Terms of use</a>
-                        </li>
-                        <li>
-                            <a href="#">We're hiring!</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-lg-3 my-4">
-                    <h5 class="text-white h6 mb-4">Company</h5>
-                    <div class="white-link">
-                        <div class="d-flex pb-3">
-                            <div class="avatar avatar-lg rounded">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" title="" alt="">
-                            </div>
-                            <div class="col ps-3">
-                                <small class="text-white-65">29 March 2021</small>
-                                <h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Markdown Language Sample Blog Post Styling</a></h6>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="avatar avatar-lg rounded">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" title="" alt="">
-                            </div>
-                            <div class="col ps-3">
-                                <small class="text-white-65">29 March 2021</small>
-                                <h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Markdown Language Sample Blog Post Styling</a></h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4 mb-4">
+            <h5>Sign up to Get Latest Updates</h5>
+          </div>
+          <div class="col-lg-5 mb-4">
+            <form class="input-group">
+              <input type="email" class="form-control" placeholder="you@yoursite.com">
+              <button class="btn btn-secondary" type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="col-lg-3 text-lg-end">
+            <span class="h6">Call Us On</span><br>
+            <span class="h4">1-800-222-000</span>
+          </div>
         </div>
-    </div>
-    <div class="footer-bottom footer-border-top light py-3">
-        <div class="container text-center">
-            <p class="m-0">© 2021 copyright <a href="#" class="text-reset text-white">Bootdey.com</a></p>
+        <div class="row">
+          <div class="col-lg-3 mb-4">
+            <img src="static/img/logo-light.svg" alt="Logo" class="mb-3" style="max-width: 150px;">
+            <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            <div class="d-flex">
+              <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <!-- Footer links: Customer, Product, Company -->
+          <div class="col-lg-2 mb-4">
+            <h6>Customer</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white-50">Get Corpo</a></li>
+              <li><a href="#" class="text-white-50">Documentation</a></li>
+              <li><a href="#" class="text-white-50">Help center</a></li>
+              <li><a href="#" class="text-white-50">Pricing</a></li>
+              <li><a href="#" class="text-white-50">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 mb-4">
+            <h6>Product</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white-50">Portfolio</a></li>
+              <li><a href="#" class="text-white-50">Blog</a></li>
+              <li><a href="#" class="text-white-50">Join our team</a></li>
+              <li><a href="#" class="text-white-50">Elements</a></li>
+              <li><a href="#" class="text-white-50">Products</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 mb-4">
+            <h6>Company</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white-50">About</a></li>
+              <li><a href="#" class="text-white-50">Careers</a></li>
+              <li><a href="#" class="text-white-50">Legal & Security</a></li>
+              <li><a href="#" class="text-white-50">Terms of use</a></li>
+              <li><a href="#" class="text-white-50">We're hiring!</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <h6>From the Blog</h6>
+            <div class="d-flex mb-3">
+              <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded me-3" width="50" alt="">
+              <div>
+                <small class="text-white-50">29 March 2021</small>
+                <p class="mb-0"><a class="text-white" href="#">Markdown Language Sample Blog Post Styling</a></p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="rounded me-3" width="50" alt="">
+              <div>
+                <small class="text-white-50">29 March 2021</small>
+                <p class="mb-0"><a class="text-white" href="#">Another Blog Post Preview</a></p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</footer>
-    </main>
-  <!--- js --->
+        <div class="text-center py-3 border-top border-secondary text-white-50">
+          <p class="m-0">© 2025 <a href="#" class="text-reset text-white">Little Things by Fia</a>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Your custom JS -->
   <script src="js/script.js"></script>
 </body>
 </html>
