@@ -1,4 +1,2 @@
-function toggleMenu() {
-  const nav = document.getElementById("navLinks");
-  nav.classList.toggle("active");
-}
+// Example for future features like dark mode or animations
+console.log("Welcome to my portfolio!");
