@@ -220,7 +220,7 @@
   </div>
 </section>
 
-<!-- PROJECTS (Professional) -->
+<!-- PROJECTS Carousel Section -->
 <section id="projects" class="section py-5 bg-light">
   <div class="container">
     <h2 class="section-title text-center mb-3">Projects &amp; Case Studies</h2>
@@ -228,87 +228,98 @@
       Realistic, execution-focused samples that show how I connect automation, web, and design. Click a card to view the GitHub case study.
     </p>
 
-    <div class="row g-4">
-      <!-- Project Card -->
-      <div class="col-md-6 col-lg-4">
-        <a href="projects/automation-lead-to-client/README.md" class="card h-100 shadow-sm text-decoration-none">
-          <img src="assets/lead-to-client.jpg" class="card-img-top" alt="Lead to Client Project">
-          <div class="card-body">
-            <span class="badge bg-warning text-dark mb-2">Automation</span>
-            <h3 class="card-title h5">Lead‑to‑Client Pipeline (GoHighLevel)</h3>
-            <p class="card-text">Form → Pipeline stages → Emails → Tasks → Call booking. Mermaid diagram + screenshots.</p>
-            <ul class="list-inline small text-muted">
-              <li class="list-inline-item">GoHighLevel</li>
-              <li class="list-inline-item">Email sequences</li>
-              <li class="list-inline-item">Mermaid</li>
-            </ul>
+    <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- One Slide with 6 Cards -->
+        <div class="carousel-item active">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+              <a href="projects/automation-lead-to-client/README.md" class="card h-100 shadow-sm text-decoration-none">
+                <img src="assets/lead-to-client.jpg" class="card-img-top" alt="Lead to Client Project">
+                <div class="card-body">
+                  <span class="badge bg-warning text-dark mb-2">Automation</span>
+                  <h3 class="card-title h6">Lead‑to‑Client Pipeline</h3>
+                  <p class="card-text small">Form → Pipeline → Email + Tasks.</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+              <a href="projects/automation-invoice-reminders/README.md" class="card h-100 shadow-sm text-decoration-none">
+                <img src="assets/Screenshot 2025-07-02 195232.png" class="card-img-top" alt="Invoice Reminder Project">
+                <div class="card-body">
+                  <span class="badge bg-warning text-dark mb-2">Automation</span>
+                  <h3 class="card-title h6">Invoice Reminders</h3>
+                  <p class="card-text small">Sheets → QuickBooks → Email/Slack.</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+              <a href="projects/automation-support-triage/README.md" class="card h-100 shadow-sm text-decoration-none">
+                <img src="assets/support-triage.jpg" class="card-img-top" alt="Support Triage Project">
+                <div class="card-body">
+                  <span class="badge bg-warning text-dark mb-2">Automation</span>
+                  <h3 class="card-title h6">Support Triage Router</h3>
+                  <p class="card-text small">Typeform → ClickUp automation.</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+              <a href="projects/web-bakery-onepager/README.md" class="card h-100 shadow-sm text-decoration-none">
+                <img src="assets/bakery.jpg" class="card-img-top" alt="Bakery Project">
+                <div class="card-body">
+                  <span class="badge bg-info text-white mb-2">Web</span>
+                  <h3 class="card-title h6">Bakery One‑Pager</h3>
+                  <p class="card-text small">Responsive design with form.</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+              <a href="projects/qa-checkout-review/README.md" class="card h-100 shadow-sm text-decoration-none">
+                <img src="assets/checkout-review.jpg" class="card-img-top" alt="Checkout Review Project">
+                <div class="card-body">
+                  <span class="badge bg-secondary mb-2">QA</span>
+                  <h3 class="card-title h6">Checkout Heuristic Review</h3>
+                  <p class="card-text small">Testing and usability fixes.</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col">
+              <a href="#" class="card h-100 shadow-sm text-decoration-none">
+                <img src="assets/sample.jpg" class="card-img-top" alt="Sample Project">
+                <div class="card-body">
+                  <span class="badge bg-primary mb-2">Design</span>
+                  <h3 class="card-title h6">Sample Card</h3>
+                  <p class="card-text small">Placeholder for another project.</p>
+                </div>
+              </a>
+            </div>
           </div>
-        </a>
+        </div>
+
       </div>
 
-      <!-- Repeat for other projects with respective image paths -->
-      <div class="col-md-6 col-lg-4">
-        <a href="projects/automation-invoice-reminders/README.md" class="card h-100 shadow-sm text-decoration-none">
-          <img src="assets/Screenshot 2025-07-02 195232.png" class="card-img-top" alt="Invoice Reminder Project">
-          <div class="card-body">
-            <span class="badge bg-warning text-dark mb-2">Automation</span>
-            <h3 class="card-title h5">Invoice &amp; Payment Reminders (Pabbly + QuickBooks)</h3>
-            <p class="card-text">Auto-create/send invoices from Sheets, pre‑due reminders, overdue alerts to Slack/Email.</p>
-            <ul class="list-inline small text-muted">
-              <li class="list-inline-item">Pabbly</li>
-              <li class="list-inline-item">QuickBooks</li>
-              <li class="list-inline-item">Google Sheets</li>
-            </ul>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <a href="projects/automation-support-triage/README.md" class="card h-100 shadow-sm text-decoration-none">
-          <img src="assets/support-triage.jpg" class="card-img-top" alt="Support Triage Project">
-          <div class="card-body">
-            <span class="badge bg-warning text-dark mb-2">Automation</span>
-            <h3 class="card-title h5">Support Triage Router (Zapier → ClickUp)</h3>
-            <p class="card-text">Typeform issue intake → Priority mapping → ClickUp task creation + user confirmation.</p>
-            <ul class="list-inline small text-muted">
-              <li class="list-inline-item">Zapier</li>
-              <li class="list-inline-item">ClickUp</li>
-              <li class="list-inline-item">Typeform</li>
-            </ul>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <a href="projects/web-bakery-onepager/README.md" class="card h-100 shadow-sm text-decoration-none">
-          <img src="assets/bakery.jpg" class="card-img-top" alt="Bakery Project">
-          <div class="card-body">
-            <span class="badge bg-info text-white mb-2">Web</span>
-            <h3 class="card-title h5">Local Bakery One‑Pager (HTML/CSS)</h3>
-            <p class="card-text">Responsive layout, sticky nav, Formspree contact, Lighthouse scores documented.</p>
-            <ul class="list-inline small text-muted">
-              <li class="list-inline-item">HTML/CSS</li>
-              <li class="list-inline-item">Lighthouse</li>
-            </ul>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <a href="projects/qa-checkout-review/README.md" class="card h-100 shadow-sm text-decoration-none">
-          <img src="assets/checkout-review.jpg" class="card-img-top" alt="Checkout Review Project">
-          <div class="card-body">
-            <span class="badge bg-secondary mb-2">QA</span>
-            <h3 class="card-title h5">Checkout Flow Heuristic Review</h3>
-            <p class="card-text">Test plan + issues table (severity, fix) for a mock shop; mobile keyboard overlap fix.</p>
-            <ul class="list-inline small text-muted">
-              <li class="list-inline-item">Testing</li>
-              <li class="list-inline-item">Docs</li>
-            </ul>
-          </div>
-        </a>
-      </div>
+      <!-- Carousel Controls (Optional) -->
+      <!-- You can add more slides if you have more cards -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
     </div>
+
     <!-- CTA Buttons -->
     <div class="studio-cta text-center mt-5">
       <a href="https://instagram.com/yourstudiohandle" target="_blank" class="btn btn-outline-secondary me-2">See More on Instagram</a>
