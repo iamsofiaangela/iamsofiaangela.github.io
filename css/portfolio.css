@@ -140,3 +140,18 @@ h1, h2, h3 {
 .pill-yellow { background-color: #ffc107; color: #212529; }
 .pill-dark   { background-color: #343a40; }
 .pill-teal   { background-color: #20c997; }
+
+.sub-info {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-color);
+}
+
+.small-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.why-choose-center-image img {
+  border: 5px solid var(--accent-color);
+}
