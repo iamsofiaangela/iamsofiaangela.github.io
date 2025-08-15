@@ -2,287 +2,270 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Little Things By Fia | My Portfolio</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" crossorigin="anonymous" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/service.css" />
-  <link rel="stylesheet" href="css/footer.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sofia “Fia” Baltazar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+<body>
 
-<body class="d-flex flex-column h-100 bg-light">
-  <main class="flex-shrink-0">
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">
+        <span class="brand-primary">Sofia</span> <span class="brand-accent">(Fia)</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav" role="navigation">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#ltbf">Little Things by Fia</a>
+        <a href="#learning">Learning</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn-ghost">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-      <div class="container px-5">
-        <a class="navbar-brand fw-bold" href="#page-top">Little Things By Fia</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu <i class="bi bi-list ms-1"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-            <li class="nav-item"><a class="nav-link me-lg-3" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link me-lg-3" href="#services">Services</a></li>
-            <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link me-lg-3" href="#portfolio">Portfolio</a></li>
-          </ul>
-          <a href="#contact">
-            <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
-              <span class="d-flex align-items-center">
-                <i class="bi bi-chat-text-fill me-2"></i>
-                <span class="small">Contact Now</span>
-              </span>
-            </button>
-          </a>
-        </div>
-      </div>
-    </nav>
-
-<br>
-  <!-- HOME -->
+  <!-- HERO -->
   <section id="home" class="hero">
-    <div class="container text-center">
-      <h1>Hi, I’m Fia 👋</h1>
-      <h2>I streamline workflows & craft engaging digital experiences.</h2>
-      <p>Automation • Web Development • Branding • Learning UI/UX</p>
-      <a href="#projects" class="btn-primary">Explore My Projects</a>
-      <a href="#contact" class="btn-secondary">Work With Me</a>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Streamlining Workflows & Crafting Digital Experiences</h1>
+        <p class="tagline">
+          I’m <strong>Sofia “Fia” Baltazar</strong> — a CRM & automation specialist with web development skills and a love for design.
+          I build simple, reliable systems with <em>GoHighLevel</em>, <em>Pabbly</em>, <em>Zapier</em>, <em>QuickBooks</em>, and the web stack.
+        </p>
+        <div class="cta-row">
+          <a href="#projects" class="btn-primary">Explore Projects</a>
+          <a href="#contact" class="btn-secondary">Work With Me</a>
+        </div>
+        <ul class="pill-list">
+          <li>GoHighLevel</li><li>Pabbly</li><li>Zapier</li><li>QuickBooks</li>
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP/MySQL</li><li>WordPress</li>
+        </ul>
+      </div>
+      <div class="hero-card">
+        <h3>Positioning</h3>
+        <p><strong>Core:</strong> CRM Automation, Workflow & QA</p>
+        <p><strong>Plus:</strong> Web Dev (WordPress + custom)</p>
+        <p><strong>Creative:</strong> Branding & Design (Canva + base Adobe)</p>
+        <a href="#ltbf" class="inline-link">See my studio work →</a>
+      </div>
     </div>
   </section>
 
+  <!-- PROJECTS (Professional) -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects & Case Studies</h2>
+      <p class="section-intro">
+        Realistic, execution-focused samples that show how I connect automation, web, and design. Click a card to view the GitHub case study.
+      </p>
 
-    <!-- SERVICES -->
-    <section id="services" class="section py-5">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-lg-8">
-            <h6 class="text-uppercase text-muted">Plans Your Best Service</h6>
-            <h3>Let's find a way together</h3>
-            <p>Custom digital services crafted with care and creativity.</p>
-            <div class="line mx-auto my-3" style="width: 50px; height: 3px; background: #000;"></div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <!-- Plan A -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 shadow">
-              <div class="card-body">
-                <h3 class="card-title">Social Media Templates</h3>
-                <p class="card-text">Editable Canva templates for creatives and small businesses.</p>
-                <ul class="list-unstyled mt-3">
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Duration: 7 days</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>10 Features</li>
-                  <li><i class="fas fa-times-circle text-danger me-2"></i>No Hidden Fees</li>
-                  <li><i class="fas fa-times-circle text-danger me-2"></i>100+ Video Tutorials</li>
-                  <li><i class="fas fa-times-circle text-danger me-2"></i>No Tools Included</li>
-                </ul>
-              </div>
-              <div class="card-footer bg-transparent text-center">
-                <a href="#" class="btn btn-success">Get Started</a>
-              </div>
-            </div>
-          </div>
-          <!-- You can add more cards here -->
-        </div>
-      </div>
-    </section>
+      <div class="grid">
+        <!-- Automation: Lead-to-Client Pipeline -->
+        <a class="card" href="projects/automation-lead-to-client/README.md">
+          <span class="pill cat-automation">Automation</span>
+          <h3>Lead‑to‑Client Pipeline (GoHighLevel)</h3>
+          <p>Form → Pipeline stages → Emails → Tasks → Call booking. Mermaid diagram + screenshots.</p>
+          <ul class="meta"><li>GoHighLevel</li><li>Email sequences</li><li>Mermaid</li></ul>
+        </a>
 
-    <!-- ABOUT -->
-<section id="about" class="section py-5 bg-white">
-  <div class="container text-center">
-    <h2 class="mb-4">About Me</h2>
-    <p class="lead mx-auto" style="max-width: 800px;">
-      Hello! I’m Fia, the creator behind <strong>Little Things by Fia</strong>. I help small brands shine through handcrafted digital products and thoughtful design.
-    </p>
-  </div>
-</section>
+        <!-- Automation: Invoice & Payment Reminders -->
+        <a class="card" href="projects/automation-invoice-reminders/README.md">
+          <span class="pill cat-automation">Automation</span>
+          <h3>Invoice & Payment Reminders (Pabbly + QuickBooks)</h3>
+          <p>Auto-create/send invoices from Sheets, pre‑due reminders, overdue alerts to Slack/Email.</p>
+          <ul class="meta"><li>Pabbly</li><li>QuickBooks</li><li>Google Sheets</li></ul>
+        </a>
 
-<!-- PORTFOLIO -->
-<section id="portfolio" class="section py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="mb-5">My Work</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card shadow-sm h-100">
-          <img src="images/work1.jpg" class="card-img-top" alt="Sample Work 1">
-          <div class="card-body">
-            <p class="card-text">Logo + Brand Guide for Local Café</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card shadow-sm h-100">
-          <img src="images/work2.jpg" class="card-img-top" alt="Sample Work 2">
-          <div class="card-body">
-            <p class="card-text">Digital Planner for Creative Entrepreneurs</p>
-          </div>
-        </div>
+        <!-- Automation: Support Triage Router -->
+        <a class="card" href="projects/automation-support-triage/README.md">
+          <span class="pill cat-automation">Automation</span>
+          <h3>Support Triage Router (Zapier → ClickUp)</h3>
+          <p>Typeform issue intake → Priority mapping → ClickUp task creation + user confirmation.</p>
+          <ul class="meta"><li>Zapier</li><li>ClickUp</li><li>Typeform</li></ul>
+        </a>
+
+        <!-- Web: One-pager -->
+        <a class="card" href="projects/web-bakery-onepager/README.md">
+          <span class="pill cat-web">Web</span>
+          <h3>Local Bakery One‑Pager (HTML/CSS)</h3>
+          <p>Responsive layout, sticky nav, Formspree contact, Lighthouse scores documented.</p>
+          <ul class="meta"><li>HTML/CSS</li><li>Lighthouse</li></ul>
+        </a>
+
+        <!-- QA: Checkout review -->
+        <a class="card" href="projects/qa-checkout-review/README.md">
+          <span class="pill cat-qa">QA</span>
+          <h3>Checkout Flow Heuristic Review</h3>
+          <p>Test plan + issues table (severity, fix) for a mock shop; mobile keyboard overlap fix.</p>
+          <ul class="meta"><li>Testing</li><li>Docs</li></ul>
+        </a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section py-5 bg-white">
-  <div class="container text-center">
-    <h2 class="mb-4">Let’s Work Together</h2>
-    <p class="lead">Email me at <a href="mailto:hello@littlethingsbyfia.com">hello@littlethingsbyfia.com</a></p>
-  </div>
-</section>
+  <!-- LITTLE THINGS BY FIA (Studio) -->
+  <section id="ltbf" class="section ltbf">
+    <div class="container">
+      <div class="ltbf-head">
+        <h2 class="section-title">Little Things by Fia</h2>
+        <p class="section-intro">
+          My studio for branding packs, social templates, and thoughtful design assets for small brands.
+        </p>
+      </div>
 
-<!-- FOOTER -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
-<footer class="bg-dark-gradient footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="footer-border-bottom pb-6 mb-5">
-                <div class="row">
-                    <div class="col-lg-4 col-xl-3">
-                        <h4 class="text-white">
-                            Sign up to Get Latest Updates
-                        </h4>
-                    </div>
-                    <div class="col-lg-4 col-xl-6">
-                        <form class="d-flex flex-row mb-2 p-1 bg-white input-group">
-                            <input type="email" class="form-control rounded-0 border-0" placeholder="you@yoursite.com">
-                            <button class="btn btn-secondary rounded-0 flex-shrink-0" type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                    <div class="col-lg-4 col-xl-3">
-                        <div class="text-lg-end text-white">
-                            <span class="h6">Call Us On</span><br>
-                            <span class="h3">1-800-222-000</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-lg-3 my-4">
-                    <div class="mb-4">
-                        <img src="static/img/logo-light.svg" title="" alt="">
-                    </div>
-                    <div class="text-white-65 mb-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
-                    <div class="nav footer-socila-icon">
-                        <a href="#">
-<i class="fab fa-facebook-f"></i>
-</a>
-                        <a href="#">
-<i class="fab fa-twitter"></i>
-</a>
-                        <a href="#">
-<i class="fab fa-instagram"></i>
-</a>
-                        <a href="#">
-<i class="fab fa-linkedin-in"></i>
-</a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-2 my-4">
-                    <h5 class="text-white h6 mb-4">Customer</h5>
-                    <ul class="list-unstyled white-link footer-links">
-                        <li>
-                            <a href="#">Get Corpo</a>
-                        </li>
-                        <li>
-                            <a href="#">Documentation</a>
-                        </li>
-                        <li>
-                            <a href="#">Help center</a>
-                        </li>
-                        <li>
-                            <a href="#">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-lg-2 my-4">
-                    <h5 class="text-white h6 mb-4">Product</h5>
-                    <ul class="list-unstyled white-link footer-links">
-                        <li>
-                            <a href="#">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Join our team</a>
-                        </li>
-                        <li>
-                            <a href="#">Elements</a>
-                        </li>
-                        <li>
-                            <a href="#">Products</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-lg-2 my-4">
-                    <h5 class="text-white h6 mb-4">Company</h5>
-                    <ul class="list-unstyled white-link footer-links">
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Careers</a>
-                        </li>
-                        <li>
-                            <a href="#">Legal &amp; Security</a>
-                        </li>
-                        <li>
-                            <a href="#">Terms of use</a>
-                        </li>
-                        <li>
-                            <a href="#">We're hiring!</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-lg-3 my-4">
-                    <h5 class="text-white h6 mb-4">Company</h5>
-                    <div class="white-link">
-                        <div class="d-flex pb-3">
-                            <div class="avatar avatar-lg rounded">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" title="" alt="">
-                            </div>
-                            <div class="col ps-3">
-                                <small class="text-white-65">29 March 2021</small>
-                                <h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Markdown Language Sample Blog Post Styling</a></h6>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="avatar avatar-lg rounded">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" title="" alt="">
-                            </div>
-                            <div class="col ps-3">
-                                <small class="text-white-65">29 March 2021</small>
-                                <h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Markdown Language Sample Blog Post Styling</a></h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="grid">
+        <div class="card card-media">
+          <span class="pill cat-design">Branding</span>
+          <h3>Sweet Bean Café — Mini Brand Pack</h3>
+          <p>Logo wordmark + bean icon, palette, Playfair/Poppins pairing, IG post & story templates.</p>
+          <div class="media-row">
+            <img src="assets/sweetbean-logo.png" alt="Sweet Bean Café logo preview">
+            <img src="assets/sweetbean-ig-post.png" alt="Sweet Bean Café IG post">
+          </div>
         </div>
-    </div>
-    <div class="footer-bottom footer-border-top light py-3">
-        <div class="container text-center">
-            <p class="m-0">© 2021 copyright <a href="#" class="text-reset text-white">Bootdey.com</a></p>
-        </div>
-    </div>
-</footer>
-  </main>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Your custom JS -->
-  <script src="js/script.js"></script>
+        <div class="card card-media">
+          <span class="pill cat-design">Templates</span>
+          <h3>Social Media Template Set</h3>
+          <p>Modular Canva set for promos, testimonials, and announcements; export guidance included.</p>
+          <div class="media-row">
+            <img src="assets/templates-grid.png" alt="Social template grid preview">
+          </div>
+        </div>
+
+        <div class="card card-media">
+          <span class="pill cat-design">Stationery</span>
+          <h3>Planner & Digital Stationery</h3>
+          <p>Clean, printable layouts for daily/weekly planning; consistent spacing and hierarchy.</p>
+          <div class="media-row">
+            <img src="assets/planner-a4.png" alt="Planner page">
+          </div>
+        </div>
+      </div>
+
+      <div class="studio-cta">
+        <a href="https://instagram.com/yourstudiohandle" target="_blank" class="btn-secondary">See More on Instagram</a>
+        <a href="#contact" class="btn-primary">Request a Design</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEARNING -->
+  <section id="learning" class="section">
+    <div class="container">
+      <h2 class="section-title">Learning Journey (UI/UX & More)</h2>
+      <p class="section-intro">Honest progress snapshots — building depth while shipping work.</p>
+      <ul class="timeline">
+        <li><strong>Week 1:</strong> Figma interface basics — frames, alignment, components.</li>
+        <li><strong>Week 2:</strong> Low‑fi wireframes for a one‑pager; mobile‑first layout.</li>
+        <li><strong>Week 3:</strong> Accessibility fundamentals — color contrast & focus states.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div>
+        <h2 class="section-title">About Sofia (Fia)</h2>
+        <p>
+          I help businesses work smarter through <strong>CRM automation</strong>, <strong>workflow optimization</strong>,
+          and <strong>web development</strong> — blending technical precision with a creative eye for design.
+          I use Canva daily and have <em>foundational</em> Adobe Creative Suite skills (Photoshop, Illustrator, InDesign).
+          I’m actively expanding in UI/UX to better connect functionality with user needs.
+        </p>
+        <ul class="bullet-cols">
+          <li>GoHighLevel, Pabbly, Zapier, QuickBooks</li>
+          <li>HTML, CSS, JavaScript, PHP/MySQL</li>
+          <li>WordPress customization</li>
+          <li>Branding & visual design</li>
+          <li>QA testing & documentation</li>
+          <li>ClickUp, Trello, Notion</li>
+        </ul>
+      </div>
+      <aside class="about-card">
+        <h3>Download</h3>
+        <a class="btn-primary" href="assets/sofia-baltazar-resume.pdf" target="_blank">My Résumé (PDF)</a>
+        <a class="btn-ghost" href="https://www.linkedin.com/in/sofia-baltazar-working" target="_blank">LinkedIn Profile</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title text-center">Get in Touch</h2>
+      <p class="section-intro text-center">Tell me about your project or collaboration.</p>
+
+      <form action="https://formspree.io/f/YOUR-FORMSPREE-ID" method="POST" class="contact-form" aria-label="Contact form">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your Name" required aria-label="Your name">
+          <input type="email" name="email" placeholder="Your Email" required aria-label="Your email">
+        </div>
+        <div class="form-row">
+          <select name="project_type" aria-label="Project type">
+            <option value="">Select Project Type</option>
+            <option value="automation">Automation Workflow</option>
+            <option value="website">Website Build</option>
+            <option value="branding">Branding & Design</option>
+            <option value="other">Other</option>
+          </select>
+          <input type="text" name="budget" placeholder="Budget (optional)" aria-label="Budget (optional)">
+        </div>
+        <textarea name="message" placeholder="Tell me about your project..." required aria-label="Your message"></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+
+      <div class="contact-cta">
+        <a href="https://www.linkedin.com/in/sofia-baltazar-working" target="_blank" class="btn-secondary">View My Professional Profile</a>
+        <a href="mailto:your@email.com" class="inline-link">Or email me directly</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Sofia “Fia” Baltazar • Portfolio</p>
+      <div class="social">
+        <a href="https://github.com/iamsofiaangela" target="_blank" aria-label="GitHub">GitHub</a>
+        <a href="https://instagram.com/yourstudiohandle" target="_blank" aria-label="Instagram">Instagram</a>
+        <a href="https://facebook.com/yourstudiohandle" target="_blank" aria-label="Facebook">Facebook</a>
+        <a href="https://tiktok.com/@yourstudiohandle" target="_blank" aria-label="TikTok">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('open');
+    });
+
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll (native on most browsers; this ensures older ones)
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (nav.classList.contains('open')) nav.classList.remove('open');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
