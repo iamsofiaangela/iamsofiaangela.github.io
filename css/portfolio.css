@@ -79,9 +79,17 @@
       margin-right: 1rem;
     }
 
+
 .core-item:hover {
   background-color: #f8f9fa;
   transition: all 0.3s ease;
   transform: translateY(-5px);
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
+}
+
+.carousel-item blockquote {
+  transition: all 0.5s ease;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #444;
 }
