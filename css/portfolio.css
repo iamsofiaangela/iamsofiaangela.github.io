@@ -35,6 +35,7 @@ h1, h2, h3 {
   border: none;
 }
 
+
 .btn-secondary {
   background-color: var(--accent-color);
   color: #fff;
@@ -120,3 +121,22 @@ h1, h2, h3 {
   font-weight: 500;
   font-size: 1rem;
 }
+
+.pill {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.pill-purple { background-color: #7e5bef; }
+.pill-gray   { background-color: #6c757d; }
+.pill-blue   { background-color: #0dcaf0; }
+.pill-green  { background-color: #28a745; }
+.pill-orange { background-color: #fd7e14; }
+.pill-red    { background-color: #dc3545; }
+.pill-yellow { background-color: #ffc107; color: #212529; }
+.pill-dark   { background-color: #343a40; }
+.pill-teal   { background-color: #20c997; }
