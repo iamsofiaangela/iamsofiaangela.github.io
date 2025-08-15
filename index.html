@@ -258,17 +258,49 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section id="testimonials" class="section testimonials">
-    <div class="container">
-      <h2 class="section-title">What Clients Say</h2>
-      <div class="grid">
-        <blockquote>“Before working with Fia, our sales follow-up took days. Now it’s instant — and we’ve doubled our booked calls.” — Maria R.</blockquote>
-        <blockquote>“She designed a brand kit that made my business look polished overnight.” — Lorenzo P.</blockquote>
-        <blockquote>“Fia turned my messy workflows into a system that saves me hours weekly.” — Ana S.</blockquote>
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section testimonials py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">What Clients Say</h2>
+    
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+
+        <div class="carousel-item active">
+          <blockquote class="blockquote mx-auto" style="max-width: 700px;">
+            <p class="mb-4">“Before working with Fia, our sales follow-up took days. Now it’s instant — and we’ve doubled our booked calls.”</p>
+            <footer class="blockquote-footer">Maria R.</footer>
+          </blockquote>
+        </div>
+
+        <div class="carousel-item">
+          <blockquote class="blockquote mx-auto" style="max-width: 700px;">
+            <p class="mb-4">“She designed a brand kit that made my business look polished overnight.”</p>
+            <footer class="blockquote-footer">Lorenzo P.</footer>
+          </blockquote>
+        </div>
+
+        <div class="carousel-item">
+          <blockquote class="blockquote mx-auto" style="max-width: 700px;">
+            <p class="mb-4">“Fia turned my messy workflows into a system that saves me hours weekly.”</p>
+            <footer class="blockquote-footer">Ana S.</footer>
+          </blockquote>
+        </div>
+
       </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- CONTACT -->
   <section id="contact" class="section contact">
@@ -304,5 +336,8 @@
     });
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
