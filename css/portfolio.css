@@ -1,95 +1,116 @@
- :root {
-      --primary-color: #5a189a;
-      --accent-color: #f72585;
-      --text-color: #333;
-      --background-color: #fff;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: var(--background-color);
-      color: var(--text-color);
-    }
-
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-    }
-
-    .navbar-brand span:first-child {
-      color: var(--primary-color);
-      font-weight: 700;
-    }
-
-    .navbar-brand span:last-child {
-      color: var(--accent-color);
-    }
-
-    .btn-primary {
-      background-color: var(--primary-color);
-      border: none;
-    }
-
-    .btn-secondary {
-      background-color: var(--accent-color);
-      color: #fff;
-      border: none;
-    }
-
-    .btn-ghost {
-      border: 1px solid var(--primary-color);
-      color: var(--primary-color);
-      background: transparent;
-    }
-
-    .pill {
-      display: inline-block;
-      padding: 0.25rem 0.75rem;
-      border-radius: 50px;
-      background-color: #eee;
-      font-size: 0.8rem;
-    }
-
-    .hero {
-      padding: 4rem 0;
-    }
-
-    .section {
-      padding: 4rem 0;
-    }
-
-    .core-item, .card, .about-card {
-      border: 1px solid #ddd;
-      border-radius: 0.5rem;
-      padding: 1.5rem;
-      margin-bottom: 1rem;
-      background-color: #fff;
-    }
-
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-    }
-
-    .social a {
-      margin-right: 1rem;
-    }
-
-
-.core-item:hover {
-  background-color: #f8f9fa;
-  transition: all 0.3s ease;
-  transform: translateY(-5px);
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
+:root {
+  /* 🌈 Customizable theme colors */
+  --primary-color: #5a189a;       /* Main brand color (purple) */
+  --accent-color: #f72585;        /* Accent color (pink) */
+  --text-color: #333;             /* Base text color */
+  --background-color: #fff;       /* Global background */
 }
 
+body {
+  /* 🖋 Base typography and background */
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  /* 🎨 Headings get a serif font for contrast */
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar-brand span:first-child {
+  /* 🎯 Style for primary part of brand name */
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.navbar-brand span:last-child {
+  /* 💡 Style for accent part of brand name */
+  color: var(--accent-color);
+}
+
+/* 🔘 Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn-secondary {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+}
+
+.btn-ghost {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background: transparent;
+}
+
+/* 💬 Pill labels (used for tags like "Automation", "Web", etc.) */
+.pill {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  background-color: #eee;
+  font-size: 0.8rem;
+}
+
+/* 📌 Spacing for key sections */
+.hero {
+  padding: 4rem 0;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+/* 📦 Card and box components (uniform styling) */
+.core-item,
+.card,
+.about-card {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+
+/* 🔗 Footer layout */
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* 🔗 Social media link spacing */
+.social a {
+  margin-right: 1rem;
+}
+
+/* ✨ Card hover effect for .core-item */
+.core-item:hover {
+  background-color: #f8f9fa; /* light grey hover */
+  transition: all 0.3s ease;
+  transform: translateY(-5px); /* subtle lift */
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05); /* soft shadow */
+}
+
+/* 💬 Testimonial styling inside carousel */
 .carousel-item blockquote {
   transition: all 0.5s ease;
   font-size: 1.2rem;
   font-style: italic;
   color: #444;
+}
+
+/* 📣 Call-to-action buttons in "studio-cta" */
+.studio-cta .btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
