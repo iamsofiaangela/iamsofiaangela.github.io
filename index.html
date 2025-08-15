@@ -163,56 +163,92 @@
     </div>
   </section>
 
-  <!-- PROJECTS (Professional) -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">Projects & Case Studies</h2>
-      <p class="section-intro">
-        Realistic, execution-focused samples that show how I connect automation, web, and design. Click a card to view the GitHub case study.
-      </p>
-      <div class="grid">
-        <!-- Automation: Lead-to-Client Pipeline -->
-        <a class="card" href="projects/automation-lead-to-client/README.md">
-          <span class="pill cat-automation">Automation</span>
-          <h3>Lead‑to‑Client Pipeline (GoHighLevel)</h3>
-          <p>Form → Pipeline stages → Emails → Tasks → Call booking. Mermaid diagram + screenshots.</p>
-          <ul class="meta"><li>GoHighLevel</li><li>Email sequences</li><li>Mermaid</li></ul>
-        </a>
+ <!-- PROJECTS (Professional) -->
+<section id="projects" class="section py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-3">Projects &amp; Case Studies</h2>
+    <p class="section-intro text-center mb-5">
+      Realistic, execution-focused samples that show how I connect automation, web, and design. Click a card to view the GitHub case study.
+    </p>
 
-        <!-- Automation: Invoice & Payment Reminders -->
-        <a class="card" href="projects/automation-invoice-reminders/README.md">
-          <span class="pill cat-automation">Automation</span>
-          <h3>Invoice & Payment Reminders (Pabbly + QuickBooks)</h3>
-          <p>Auto-create/send invoices from Sheets, pre‑due reminders, overdue alerts to Slack/Email.</p>
-          <ul class="meta"><li>Pabbly</li><li>QuickBooks</li><li>Google Sheets</li></ul>
+    <div class="row g-4">
+      <!-- Project Card -->
+      <div class="col-md-6 col-lg-4">
+        <a href="projects/automation-lead-to-client/README.md" class="card h-100 shadow-sm project-card text-decoration-none">
+          <div class="card-body">
+            <span class="badge bg-warning text-dark mb-2">Automation</span>
+            <h3 class="card-title h5">Lead‑to‑Client Pipeline (GoHighLevel)</h3>
+            <p class="card-text">Form → Pipeline stages → Emails → Tasks → Call booking. Mermaid diagram + screenshots.</p>
+            <ul class="list-inline small text-muted">
+              <li class="list-inline-item">GoHighLevel</li>
+              <li class="list-inline-item">Email sequences</li>
+              <li class="list-inline-item">Mermaid</li>
+            </ul>
+          </div>
         </a>
+      </div>
 
-        <!-- Automation: Support Triage Router -->
-        <a class="card" href="projects/automation-support-triage/README.md">
-          <span class="pill cat-automation">Automation</span>
-          <h3>Support Triage Router (Zapier → ClickUp)</h3>
-          <p>Typeform issue intake → Priority mapping → ClickUp task creation + user confirmation.</p>
-          <ul class="meta"><li>Zapier</li><li>ClickUp</li><li>Typeform</li></ul>
+      <!-- Repeat for each project -->
+      <div class="col-md-6 col-lg-4">
+        <a href="projects/automation-invoice-reminders/README.md" class="card h-100 shadow-sm project-card text-decoration-none">
+          <div class="card-body">
+            <span class="badge bg-warning text-dark mb-2">Automation</span>
+            <h3 class="card-title h5">Invoice &amp; Payment Reminders (Pabbly + QuickBooks)</h3>
+            <p class="card-text">Auto-create/send invoices from Sheets, pre‑due reminders, overdue alerts to Slack/Email.</p>
+            <ul class="list-inline small text-muted">
+              <li class="list-inline-item">Pabbly</li>
+              <li class="list-inline-item">QuickBooks</li>
+              <li class="list-inline-item">Google Sheets</li>
+            </ul>
+          </div>
         </a>
+      </div>
 
-        <!-- Web: One-pager -->
-        <a class="card" href="projects/web-bakery-onepager/README.md">
-          <span class="pill cat-web">Web</span>
-          <h3>Local Bakery One‑Pager (HTML/CSS)</h3>
-          <p>Responsive layout, sticky nav, Formspree contact, Lighthouse scores documented.</p>
-          <ul class="meta"><li>HTML/CSS</li><li>Lighthouse</li></ul>
+      <div class="col-md-6 col-lg-4">
+        <a href="projects/automation-support-triage/README.md" class="card h-100 shadow-sm project-card text-decoration-none">
+          <div class="card-body">
+            <span class="badge bg-warning text-dark mb-2">Automation</span>
+            <h3 class="card-title h5">Support Triage Router (Zapier → ClickUp)</h3>
+            <p class="card-text">Typeform issue intake → Priority mapping → ClickUp task creation + user confirmation.</p>
+            <ul class="list-inline small text-muted">
+              <li class="list-inline-item">Zapier</li>
+              <li class="list-inline-item">ClickUp</li>
+              <li class="list-inline-item">Typeform</li>
+            </ul>
+          </div>
         </a>
+      </div>
 
-        <!-- QA: Checkout review -->
-        <a class="card" href="projects/qa-checkout-review/README.md">
-          <span class="pill cat-qa">QA</span>
-          <h3>Checkout Flow Heuristic Review</h3>
-          <p>Test plan + issues table (severity, fix) for a mock shop; mobile keyboard overlap fix.</p>
-          <ul class="meta"><li>Testing</li><li>Docs</li></ul>
+      <div class="col-md-6 col-lg-4">
+        <a href="projects/web-bakery-onepager/README.md" class="card h-100 shadow-sm project-card text-decoration-none">
+          <div class="card-body">
+            <span class="badge bg-info text-white mb-2">Web</span>
+            <h3 class="card-title h5">Local Bakery One‑Pager (HTML/CSS)</h3>
+            <p class="card-text">Responsive layout, sticky nav, Formspree contact, Lighthouse scores documented.</p>
+            <ul class="list-inline small text-muted">
+              <li class="list-inline-item">HTML/CSS</li>
+              <li class="list-inline-item">Lighthouse</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <a href="projects/qa-checkout-review/README.md" class="card h-100 shadow-sm project-card text-decoration-none">
+          <div class="card-body">
+            <span class="badge bg-secondary mb-2">QA</span>
+            <h3 class="card-title h5">Checkout Flow Heuristic Review</h3>
+            <p class="card-text">Test plan + issues table (severity, fix) for a mock shop; mobile keyboard overlap fix.</p>
+            <ul class="list-inline small text-muted">
+              <li class="list-inline-item">Testing</li>
+              <li class="list-inline-item">Docs</li>
+            </ul>
+          </div>
         </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- LITTLE THINGS BY FIA -->
   <section id="ltbf" class="section ltbf">
