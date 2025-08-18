@@ -63,7 +63,7 @@ h1, h2, h3 {
 }
 
 .contact-btn {
-  background-color: var(--background-color);
+  background-color: var(--hover-color);
   color: var(--primary-color);
   border-radius: 20px;
   padding: 6px 16px;
