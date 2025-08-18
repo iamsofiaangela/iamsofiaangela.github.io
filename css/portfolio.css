@@ -1,9 +1,10 @@
 :root {
   /* 🌈 Customizable theme colors */
-  --primary-color: #5a189a;       /* Main brand color (purple) */
-  --accent-color: #f72585;        /* Accent color (pink) */
-  --text-color: #333;             /* Base text color */
-  --background-color: #fff;       /* Global background */
+  --primary-color: #2A3663;     /* Navy */
+  --accent-color: #B59F78;      /* Warm beige */
+  --text-color: #333;           /* Base text color */
+  --background-color: #FAF6E3;  /* Light cream */
+  --hover-color: #004030;       /* Deep green for hover */
 }
 
 body {
@@ -18,23 +19,25 @@ h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
 
+.navbar {
+  background-color: var(--primary-color) !important;
+}
+
 .navbar-brand span:first-child {
-  /* 🎯 Style for primary part of brand name */
-  color: var(--primary-color);
+  color: var(--background-color);
   font-weight: 700;
 }
 
 .navbar-brand span:last-child {
-  /* 💡 Style for accent part of brand name */
   color: var(--accent-color);
 }
 
 /* 🔘 Buttons */
 .btn-primary {
   background-color: var(--primary-color);
+  color: var(--background-color);
   border: none;
 }
-
 
 .btn-secondary {
   background-color: var(--accent-color);
@@ -48,31 +51,46 @@ h1, h2, h3 {
   background: transparent;
 }
 
-/* 💬 Pill labels (used for tags like "Automation", "Web", etc.) */
-.pill {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  border-radius: 50px;
-  background-color: #eee;
-  font-size: 0.8rem;
+/* 💬 Navbar links */
+.nav-custom {
+  color: var(--background-color) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-custom:hover {
+  color: var(--hover-color) !important;
+}
+
+.contact-btn {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: var(--hover-color);
+  color: var(--background-color);
 }
 
 /* 📌 Spacing for key sections */
 .hero {
-  padding: 4rem 0;
+  padding: 6rem 0;
   background-image: url("../assets/Greek.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 6rem 0; /* Optional: adjust space over image */
-  color: #fff; /* Optional: for better contrast */
+  color: #fff;
 }
 
 .section {
   padding: 4rem 0;
 }
 
-/* 📦 Card and box components (uniform styling) */
+/* 📦 Card and box components */
 .core-item,
 .card,
 .about-card {
@@ -83,6 +101,15 @@ h1, h2, h3 {
   background-color: #fff;
 }
 
+/* ✨ Hover effect */
+.core-item:hover,
+.bundle-card:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
 /* 🔗 Footer layout */
 .footer-inner {
   display: flex;
@@ -90,38 +117,32 @@ h1, h2, h3 {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 /* 🔗 Social media link spacing */
 .social a {
   margin-right: 1rem;
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
-/* ✨ Card hover effect for .core-item */
-.core-item:hover {
-  background-color: #f8f9fa; /* light grey hover */
-  transition: all 0.3s ease;
-  transform: translateY(-5px); /* subtle lift */
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05); /* soft shadow */
-}
-
-/* 💬 Testimonial styling inside carousel */
+/* 💬 Testimonial styling */
 .carousel-item blockquote {
-  transition: all 0.5s ease;
   font-size: 1.2rem;
   font-style: italic;
   color: #444;
+  transition: all 0.5s ease;
 }
 
-/* 📣 Call-to-action buttons in "studio-cta" */
+/* 📣 Call-to-action buttons */
 .studio-cta .btn {
   padding: 0.75rem 1.5rem;
   font-weight: 500;
   font-size: 1rem;
 }
 
+/* 🏷️ Pill labels */
 .pill {
   display: inline-block;
   padding: 0.3rem 0.75rem;
@@ -141,56 +162,14 @@ h1, h2, h3 {
 .pill-dark   { background-color: #343a40; }
 .pill-teal   { background-color: #20c997; }
 
-.sub-info {
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-  color: var(--primary-color);
-}
 
-.small-text {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.why-choose-center-image img {
-  border: 5px solid var(--accent-color);
-}
+/* bundles-section */
 
 .bundles-section {
   background: #fafafa;
 }
-.bundle-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.bundle-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
+
 .bundle-desc {
   font-size: 0.9rem;
   color: #444;
 }
-
-  .nav-custom {
-    color: #FAF6E3 !important;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-
-  .nav-custom:hover {
-    color: #004030 !important; /* hover green */
-  }
-
-  .contact-btn {
-    background-color: #FAF6E3;
-    color: #2A3663;
-    border-radius: 20px;
-    padding: 6px 16px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-  }
-
-  .contact-btn:hover {
-    background-color: #004030;
-    color: #FAF6E3;
-  }
