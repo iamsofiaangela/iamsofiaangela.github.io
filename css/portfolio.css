@@ -173,3 +173,21 @@ h1, h2, h3 {
   font-size: 0.9rem;
   color: #444;
 }
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.btn-primary:hover {
+  background-color: #0a58ca; /* fallback darker shade */
+  border-color: #0a53be;
+}
+
+.btn-secondary {
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+}
+.btn-secondary:hover {
+  background-color: #5a6268; /* fallback darker shade */
+  border-color: #545b62;
+}
