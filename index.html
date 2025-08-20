@@ -312,8 +312,8 @@
     </div>
   </div>
 </section>
-  
-<!-- CASE STUDIES -->
+
+  <!-- CASE STUDIES -->
 <section id="projects" class="section py-5" style="background-color:#456882;">
   <div class="container">
     <h2 class="section-title text-center mb-3" style="color:#F9F3EF;">Every Project Tells a Story…</h2>
@@ -322,8 +322,7 @@
     </p>
 
     <div class="row g-4">
-
-      <!-- Project 1 -->
+      <!-- Show first 3 projects always -->
       <div class="col-md-6 col-lg-4">
         <div class="card h-100 shadow-lg p-3"
              style="background: rgba(255,255,255,0.7); border: 2px solid #DAA520; border-radius:1rem;">
@@ -379,8 +378,13 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Project 4 -->
+    <!-- Hidden Projects (start collapsed) -->
+    <div id="more-projects" class="collapse">
+      <div class="row g-4 mt-3">
+        <!-- Paste Projects 4–10 here -->
+              <!-- Project 4 -->
       <div class="col-md-6 col-lg-4">
         <div class="card h-100 shadow-lg p-3"
              style="background: rgba(255,255,255,0.7); border: 2px solid #DAA520; border-radius:1rem;">
@@ -512,7 +516,15 @@
           </div>
         </div>
       </div>
+        
+      </div>
+    </div>
 
+    <!-- Show More Button -->
+    <div class="text-center mt-4">
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#more-projects" aria-expanded="false" aria-controls="more-projects" id="toggleBtn">
+        ▼ Show More
+      </button>
     </div>
 
     <!-- CTA -->
