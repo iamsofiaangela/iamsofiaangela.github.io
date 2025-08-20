@@ -5,6 +5,10 @@
   --text-color: #333;           /* Base text color */
   --background-color: #FAF6E3;  /* Light cream */
   --hover-color: #B59F78;       /* Deep gold for hover */
+  --bar-bg: #102E50;     /* deep blue */
+  --bar-accent: #F5C45E; /* gold */
+  --icon-color: #ffffff;
+  --icon-hover: var(--bar-accent);
 }
 
 body {
@@ -187,4 +191,68 @@ h1, h2, h3 {
 .btn-secondary:hover {
   background-color: #5a6268; /* fallback darker shade */
   border-color: #545b62;
+}
+
+/* social media-section */
+
+.sticky-social {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1030;
+  background: var(--bar-bg);
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+  overflow: hidden;
+}
+
+.sticky-social .social-link {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  color: var(--icon-color);
+  text-decoration: none;
+  transition: transform .15s ease, color .15s ease, background-color .15s ease;
+}
+.sticky-social .social-link:hover {
+  color: var(--icon-hover);
+  background-color: rgba(255,255,255,.06);
+  transform: translateX(2px);
+}
+
+/* Hover labels */
+.sticky-social .social-link[data-label]::after{
+  content: attr(data-label);
+  position: absolute;
+  left: 56px;
+  white-space: nowrap;
+  background: var(--bar-bg);
+  color: var(--icon-color);
+  padding: .25rem .5rem;
+  border-radius: .5rem;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity .15s ease, transform .15s ease;
+  font-size: .85rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,.15);
+}
+.sticky-social .social-link:hover::after { opacity: 1; transform: translateX(0); }
+
+/* Mobile bottom bar */
+@media (max-width: 576px){
+  .sticky-social{
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0.75rem 0.75rem 0 0;
+  }
+  .sticky-social .social-link { flex: 1 1 auto; }
+  .sticky-social .social-link::after { display: none; }
 }
