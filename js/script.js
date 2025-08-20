@@ -1,11 +1,4 @@
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Set the current year in the footer
-    const yearElement = document.getElementById("year");
-    if (yearElement) {
-      yearElement.textContent = new Date().getFullYear();
-    }
-
     // Reviews Data
     const reviews = [
       {
