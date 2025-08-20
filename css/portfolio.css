@@ -5,8 +5,8 @@
   --text-color: #333;           /* Base text color */
   --background-color: #FAF6E3;  /* Light cream */
   --hover-color: #B59F78;       /* Deep gold for hover */
-  --bar-bg: #102E50;     /* deep blue */
-  --bar-accent: #F5C45E; /* gold */
+  --bar-bg: #B59F78;       /* Deep gold */
+  --bar-accent: #102E50;     /* Navy */
   --icon-color: #ffffff;
   --icon-hover: var(--bar-accent);
 }
