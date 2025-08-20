@@ -1,6 +1,6 @@
 :root {
   /* 🌈 Customizable theme colors */
-  --primary-color: #2A3663;     /* Navy */
+  --primary-color: #102E50;     /* Navy */
   --accent-color: #B59F78;      /* Warm beige */
   --text-color: #333;           /* Base text color */
   --background-color: #FAF6E3;  /* Light cream */
@@ -79,7 +79,7 @@ h1, h2, h3 {
 /* 📌 Spacing for key sections */
 .hero {
   padding: 6rem 0;
-  background-image: url("../assets/hero.png");
+  background-color: #DAC0A3; /* #DAC0A3 */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
