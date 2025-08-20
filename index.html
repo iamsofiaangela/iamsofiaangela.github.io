@@ -849,7 +849,7 @@
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> Sofia “Fia” Baltazar • Portfolio</p>
+      <p>&copy; <span id="year"></span> Sofia Angela • Portfolio</p>
       <div class="social">
         <a href="https://github.com/iamsofiaangela" target="_blank">GitHub</a>
         <a href="https://instagram.com/littlethingsbyfia" target="_blank">Instagram</a>
@@ -879,6 +879,8 @@
   moreProjects.addEventListener("hidden.bs.collapse", () => {
     toggleBtn.innerHTML = "▼ Show More";
   });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
     
   </script>
 
